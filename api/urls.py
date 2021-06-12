@@ -11,6 +11,6 @@ urlpatterns = [
     path('', include(router.urls)),
     path('', include('djoser.urls.jwt')),
     path('register/', views.CreateUserView.as_view(), name='register'),
-    path('delete-blog/<str:pk>',
+    path('delete-blog/<str:pk>/',
          views.BlogDeleteView.as_view(), name='delete-blog')
 ]
